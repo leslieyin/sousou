@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-siteapp">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="full-screen" content="yes"><!--UC强制全屏-->
+    <meta name="browsermode" content="application"><!--UC应用模式-->
+    <meta name="x5-fullscreen" content="true"><!--QQ强制全屏-->
+    <meta name="x5-page-mode" content="app"><!--QQ应用模式-->
+    <link rel="icon" href="icon/Logo.ico">
+    <title>阿猫阿狗导航</title>
+    <meta name="keywords" content="自定义导航,网站导航,导航页,浏览器主页,设计导航,视频导航,开发导航,简洁导航"/>
+    <meta name="description" content="自用导航页（HTML，jQuery，CSS），可定义多个搜索引擎，自由添加和编辑主页及侧栏快捷方式，兼容手机浏览器。">
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/jQuery.rTabs.js"></script>
+    <script src="./js/js.cookie.js"></script>
+    <script src="./js/sou.js"></script>
+    <link rel="stylesheet" href="./font_1/iconfont.css">
+    <link rel="stylesheet" href="./font_2/iconfont.css">
+    <script src="./font_1/iconfont.js"></script>
+    <link rel="stylesheet" href="./css/sou.css">
+	
+	<script async>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?89967605ba391a0dff9f49665b28b095";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+</head>
+<body>
+
+<!-- 侧栏 -->
+<div id="menu"><i></i></div>
+
+<div class="side closed">
+
+    <div class="tab-nav j-tab-nav">
+
+        <a href="javascript:void(0);" class="current">书签</a>
+
+        <a href="javascript:void(0);">我的</a>
+
+    </div>
+
+    <div class="tab-con">
+
+        <div class="j-tab-con">
+            <!--书签-->
+            <div class="tab-con-item" style="display:block;">
+
+                <div class="list">
+                    <ul>
+                        <!------>
+                        <li class="title"><i class="iconfont icon-maila"></i>邮箱</li>
+                        <li><a rel="nofollow" href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i
+                                class="iconfont icon-gmail1" style="color: #f03;"></i>Gmail</a></li>
+                        <li><a rel="nofollow" href="https://mail.qq.com/" target="_blank"><i
+                                class="iconfont icon-qq" style="color: #00bcff;"></i>QQ邮箱</a></li>
+                        <li><a rel="nofollow" href="https://mail.163.com/" target="_blank"><i
+                                class="iconfont icon-wangyi" style="color: #CE0326;"></i>网易邮箱</a></li>
+                        <li><a rel="nofollow" href="https://mail.sina.com.cn/" target="_blank"><i
+                                class="iconfont icon-xinlang" style="color: #e6162d;"></i>新浪邮箱</a></li>
+						<li><a rel="nofollow" href="https://outlook.live.com/mail/" target="_blank"><i
+                                class="iconfont icon-MailII" style="color: #0078D4;"></i>Hotmail</a></li>
+                        <li><a rel="nofollow" href="https://qiye.aliyun.com/" target="_blank"><i
+                                class="iconfont icon-alimailaliyouxiang" style="color: #f15534;"></i>阿里邮箱</a></li>
+                        <!------>
+                        <li class="title"><i class="iconfont icon-shejiaoAPP"></i>社交</li>
+                        <li><a rel="nofollow" href="https://www.weibo.com" target="_blank"><i
+                                class="iconfont icon-xinlang" style="color: #e6162d;"></i>微博</a></li>
+                        <li><a rel="nofollow" href="https://www.zhihu.com/" target="_blank"><i
+                                class="iconfont icon-zhihu" style="color: #0084ff;"></i>知乎</a></li>
+                        <li><a rel="nofollow" href="https://www.douban.com/" target="_blank"><i
+                                class="iconfont icon-douban" style="color: #00B51D;"></i>豆瓣</a></li>
+                        <li><a rel="nofollow" href="https://www.instagram.com" target="_blank"><i
+                                class="iconfont icon-instagram" style="color: #DB2B7E;"></i>Instagram</a></li>
+                        <li><a rel="nofollow" href="https://www.twitter.com" target="_blank"><i
+                                class="iconfont icon-twitter" style="color: #00bcff;"></i>Twitter</a></li>
+                        <li><a rel="nofollow" href="https://www.facebook.com" target="_blank"><i
+                                class="iconfont icon-facebook" style="color: #1877F2;"></i>Facebook</a></li>
+                        <!------>
+                        <li class="title"><i class="iconfont icon-shipin"></i> 视频媒体</li>
+                        <li><a rel="nofollow" href="https://www.youtube.com/" target="_blank"><i
+                                class="iconfont icon-youtube" style="color:#f03;"></i>Youtube</a></li>
+                        <li><a rel="nofollow" href="https://v.qq.com/" target="_blank"><i
+                                class="iconfont icon-tengxunshipin" style="color:#2a0;"></i>腾讯视频</a></li>
+                        <li><a rel="nofollow" href="https://www.youku.com/" target="_blank"><i
+                                class="iconfont icon-youku" style="color:#00CDFF;"></i>优酷</a></li>
+                        <li><a rel="nofollow" href="https://www.iqiyi.com/" target="_blank"><i
+                                class="iconfont icon-changyonglogo32" style="color:#1d0;"></i>爱奇艺</a></li>
+						<li><a rel="nofollow" href="https://www.mgtv.com/" target="_blank"><i
+                                class="iconfont icon-mangguotv" style="color:#FF9100;"></i>芒果TV</a></li>	
+                        <li><a rel="nofollow" href="https://www.bilibili.com/" target="_blank"><i
+                                class="iconfont icon-bilibili-line" style="color:#09e;"></i>哔哩哔哩</a></li>
+                        <li><a rel="nofollow" href="https://tv.sohu.com/" target="_blank"><i
+                                class="iconfont icon-souhushipin" style="color:#f03;"></i>搜狐视频</a></li>	
+                        <li><a rel="nofollow" href="https://media.netflix.com/zh_cn/" target="_blank"><i
+                                class="iconfont icon-netflix" style="color:#F70A36;"></i>奈飞</a></li>									
+                        <li><a rel="nofollow" href="http://ivi.bupt.edu.cn/" target="_blank"><i
+                                class="iconfont icon-tv" style="color:#9ae;"></i>直播电视</a></li>									
+
+                        <!------>
+                        <li class="title"><i class="iconfont icon-gouwuche"></i> 购物</li>
+                        <li><a rel="nofollow" href="https://www.taobao.com" target="_blank"><i
+                                class="iconfont icon-taobao" style="color: #ff6019;"></i>淘宝网</a></li>
+                        <li><a rel="nofollow" href="https://www.tmall.com/" target="_blank"><i
+                                class="iconfont icon-tmall" style="color: #E61414;"></i>天猫</a></li>
+                        <li><a rel="nofollow" href="https://www.jd.com" target="_blank"><i
+                                class="iconfont icon-jingdong" style="color: #e33333;"></i>京东</a></li>								
+                        <li><a rel="nofollow"
+                               href="https://www.pinduoduo.com/"
+                               title="拼多多 新电商开创者" target="_blank"><i
+                                class="iconfont icon-pinduoduo" style="color: #f83e3e;"></i>拼多多</a></li>
+                        <li><a rel="nofollow" href="https://www.suning.com/" target="_blank"><i
+                                class="iconfont icon-suning" style="color: #f90;"></i>苏宁易购</a></li>
+                        <li><a rel="nofollow" href="https://www.amazon.cn/" target="_blank"><i
+                                class="iconfont icon-amazon" style="color: #fc9b18;"></i>亚马逊</a></li>
+
+                        <!------>
+                        <li class="title"><i class="iconfont icon-sheji"></i> 设计视觉</li>
+                        <li><a rel="nofollow" href="https://www.iconfont.cn/" target="_blank"><i
+                                class="iconfont icon-Iconfont" style="color: #E61414;"></i>阿里图标</a></li>
+                        <li><a rel="nofollow" href="https://ant.design/index-cn"title="企业级产品设计体系，创造高效愉悦的工作体验" target="_blank"><i
+                                class="iconfont icon-ant-design" style="color: #E61414;"></i>Ant Design</a></li>								
+                        <li><a rel="nofollow" href="https://www.pinterest.com/"title="Pinterest是世界上最大的图片社交分享网站" target="_blank"><i
+                                class="iconfont icon-pinterests" style="color:#e02;"></i>Pinterest</a></li>
+                        <li><a rel="nofollow" href="https://www.behance.net/"title="创意设计人士可以展示自己的作品" target="_blank"><i
+                                class="iconfont icon-behance" style="color:#56f;"></i>Behance</a></li>
+                        <li><a rel="nofollow" href="https://www.dribbble.com/"title="艺术作品的交流网站" target="_blank"><i
+                                class="iconfont icon-dribbble" style="color:#e48;"></i>Dribbble</a></li>
+                        <li><a rel="nofollow" href="https://huaban.com/"title="帮你采集、发现网络上你喜欢的事物" target="_blank"><i
+                                class="iconfont icon-huaban" style="color:#f06;"></i>花瓣</a></li>
+                        <li><a rel="nofollow" href="https://www.zcool.com.cn/"title="设计师互动平台" target="_blank"><i
+                                class="iconfont icon-tubiaozhizuomoban-" style="color:#FFE300;"></i>站酷</a></li>
+                        <li><a rel="nofollow" href="https://www.inspirationde.com/"title="全球设计创意作品" target="_blank"><i
+                                class="iconfont icon-inspirationde" style="color:#458AC6;"></i>inspiration</a></li>
+                        <li><a rel="nofollow" href="https://www.ui.cn/"title="用户体验设计平台" target="_blank"><i
+                                class="iconfont icon-tubiaozhizuomoban-" style="color:#3D7EFF;"></i>UI中国</a></li>
+                        <li><a rel="nofollow" href="https://uiiiuiii.com/"title="PS教程,AI教程,原创免费教程" target="_blank"><i
+                                class="iconfont icon-uiiiuiii" style="color:#7949FF;"></i>优设教程</a></li>
+                        <li><a rel="nofollow" href="https://theinspirationgrid.com/"title="创意灵感收录" target="_blank"><i
+                                class="iconfont icon-SpirationGrid" style="color:#0aa;"></i>Spiration</a></li>
+                        <li><a rel="nofollow" href="https://www.uplabs.com/"title="Web 设计和 App 界面设计资源素材" target="_blank"><i
+                                class="iconfont icon-uplabs" style="color:#3930D8;"></i>Uplabs</a></li>									
+                        <!------>
+                        <li class="title"><i class="iconfont icon-jicheng"></i> 集成部署</li>
+                        <li><a rel="nofollow" href="https://github.com"title="是一个面向开源及私有软件项目的托管平台" target="_blank"><i
+                                class="iconfont icon-github1" style="color:#56f;"></i>Github</a></li>						
+                        <li><a rel="nofollow" href="https://coding.net"title="一站式软件研发管理平台" target="_blank"><i
+                                class="iconfont icon-coding" style="color: #F5F5EF;"></i>Coding</a></li>
+                        <li><a rel="nofollow" href="https://gitee.com"title="基于Git的代码托管和研发协作平台" target="_blank"><i
+                                class="iconfont icon-gitee" style="color: #F12F0E;"></i>Gitee</a></li>
+                        <li><a rel="nofollow" href="https://travis-ci.org"title="持续集成服务" target="_blank"><i
+                                class="iconfont icon-travisci" style="color:#2EB459"></i>travis-ci</a></li>
+                        <li><a rel="nofollow" href="https://heroku.com"title="是一个支持多种编程语言的云平台即服务" target="_blank"><i
+                                class="iconfont icon-heroku" style="color: #8F6FB3;"></i>Heroku</a></li>
+                        <li><a rel="nofollow" href="https://vercel.com"title="开箱即用的网站管理小工具" target="_blank"><i
+                                class="iconfont icon-vercel" style="color: #FFFFFF;"></i>Vercel</a></li>
+                        <li><a rel="nofollow" href="https://hub.docker.com/"title="Docker镜像的网站/存储库" target="_blank"><i
+                                class="iconfont icon-docker" style="color: #2596EC;"></i>Docker</a></li>
+                        <li><a rel="nofollow" href="https://about.gitlab.com/"title="项目管理和代码托管平台" target="_blank"><i
+                                class="iconfont icon-gitlab" style="color:#E65328;"></i>Gitlab</a></li>
+                        <li><a rel="nofollow" href="https://bitbucket.org/"title="源代码托管网站" target="_blank"><i
+                                class="iconfont icon-bitbucket" style="color:#3E77D0;"></i>Bitbucket</a></li>
+                        <li><a rel="nofollow" href="https://buddy.works"title="是一个智能的CI/CD工具" target="_blank"><i
+                                class="iconfont icon-buddy" style="color: #f08;"></i>Buddy</a></li>
+                        <li><a rel="nofollow" href="https://gogs.io/"title="一款极易搭建的自助Git服务"
+                               target="_blank"><i class="iconfont icon-gogs" style="color: #D65539;"></i>Gogs</a></li>                      
+                        <li><a rel="nofollow" href="https://git.holger.net.cn/"title="一款极易搭建的自助Git服务" target="_blank"><i
+                                class="iconfont icon-Gitah" style="color:#609926;"></i>Gitah</a></li>
+                        <!------>
+                        <li class="title"><i class="iconfont icon-developer"></i> 技术学习</li>
+                        <li><a rel="nofollow" href="https://www.csdn.net/" target="_blank"><i
+                                class="iconfont icon-csdn" style="color:#c03;"></i>CSDN</a></li>
+                        <li><a rel="nofollow" href="https://www.cnblogs.com/" target="_blank"><i
+                                class="iconfont icon-cnblogs" style="color:#2E7ACC;"></i>博客园</a></li>
+                        <li><a rel="nofollow" href="https://segmentfault.com/" target="_blank"><i
+                                class="iconfont icon-segmentfault" style="color:#009A61;"></i>思否</a></li>								
+                        <li><a rel="nofollow" href="https://www.oschina.net/" target="_blank"><i
+                                class="iconfont icon-oschina"style="color:#097F1C;"></i>开源中国</a></li>
+                        <li><a rel="nofollow" href="https://juejin.cn/" target="_blank"><i
+                                class="iconfont icon-juejin" style="color: #007FFF;"></i>掘金</a></li>	
+                        <li><a rel="nofollow" href="https://www.imooc.com/" target="_blank"><i
+                                class="iconfont icon-imooc" style="color: #FF2C08;"></i>慕课网</a></li>	
+                        <li><a rel="nofollow" href="https://toutiao.io/" target="_blank"><i
+                                class="iconfont icon-toutiaoio" style="color: #29AFEC;"></i>开发者头条</a></li>
+                        <li><a rel="nofollow" href="https://www.v2ex.com/" target="_blank"><i
+                                class="iconfont icon-v2ex" style="color: #FFFFFF;"></i>v2ex</a></li>								
+                        <li><a rel="nofollow" href="https://www.52pojie.cn/" target="_blank"><i
+                                class="iconfont icon-theater-masks" style="color:#f03;"></i>吾爱破解</a></li>
+                        <!------>
+                        <li class="title"><i class="iconfont icon-toolset"></i> 实用工具</li>
+                        <li><a rel="nofollow" href="https://antv.vision/zh/"title="全新一代数据可视化解决方案" target="_blank"><i
+                                class="iconfont icon-antv" style="color:#FF0808;"></i>antv</a></li>
+                        <li><a rel="nofollow" href="https://v3.bootcss.com/"title="是最受欢迎的 HTML、CSS 和 JS 框架" target="_blank"><i
+                                class="iconfont icon-bootstrap"style="color:#5A4181;"></i>Bootstrap</a></li>
+                        <li><a rel="nofollow" href="https://codepen.io/"title="一款在线前端编辑器,类似于jsfiddle" target="_blank"><i
+                                class="iconfont icon-codepen" style="color:#FFFFFF;"></i>Codepen</a></li>								
+                        <li><a rel="nofollow" href="https://www.yuque.com/"title="专业的云端知识库" target="_blank"><i
+                                class="iconfont icon-yuque"style="color:#25B864;"></i>语雀</a></li>
+                        <li><a rel="nofollow" href="https://www.diagrams.net/"title="免费开源绘图软件" target="_blank"><i
+                                class="iconfont icon-Diagram" style="color: #F08705;"></i>Diagram</a></li>	
+                        <li><a rel="nofollow" href="https://tools.miku.ac/"title="一个轻量的工具集合" target="_blank"><i
+                                class="iconfont icon-MikuTools" style="color: #FFFFFF;"></i>MikuTools</a></li>	
+                        <li><a rel="nofollow" href="https://tool.liumingye.cn/"title="刘明野的工具箱" target="_blank"><i
+                                class="iconfont icon-liumingye" style="color: #15B4F1;"></i>在线工具</a></li>
+                        <li><a rel="nofollow" href="https://www.fontke.com/"title="全球知名的字体下载与分享网站" target="_blank"><i
+                                class="iconfont icon-fontke" style="color: #25B864;"></i>Fontke</a></li>								
+                        <li><a rel="nofollow" href="https://tool.lu/"title="程序员的工具箱" target="_blank"><i
+                                class="iconfont icon-toollu" style="color:#009A61;"></i>tool.lu</a></li>	
+                        <li><a rel="nofollow" href="https://www.ssleye.com/"title="提供专业的SSL在线工具" target="_blank"><i
+                                class="iconfont icon-SSLeye" style="color:#009A61;"></i>SSLeye</a></li>
+                        <li><a rel="nofollow" href="https://www.tool22.com/"title="一个很有范的工具合集" target="_blank"><i
+                                class="iconfont icon-tool22" style="color:#F3084As;"></i>兔二工具</a></li>	
+                        <li><a rel="nofollow" href="http://www.hiwenku.com/"title="百度文库免费下载" target="_blank"><i
+                                class="iconfont icon-wendang" style="color:#FE7B35;"></i>嗨文库</a></li>									
+                    </ul>
+                </div>
+
+            </div>
+            <!--书签 end-->
+
+            <!--我的-->
+            <div class="tab-con-item">
+
+
+            </div>
+            <!--我的 end-->
+        </div>
+
+    </div>
+
+</div>
+<!-- 侧栏 end -->
+<!--和风天气插件-->
+    <div class="mywth" style="width: 320px;">
+      <div id="he-plugin-simple"></div>
+      <script async>
+        WIDGET = {
+          CONFIG: {
+            modules: "01234",
+            background: 5,
+            tmpColor: "#ffffff",
+            tmpSize: "15",
+            cityColor: "#ffffff",
+            citySize: "15",
+            aqiSize: "15",
+            weatherIconSize: "26",
+            alertIconSize: "24",
+            padding: "0px 5px 5px 0px",
+            shadow: "1",
+            language: "auto",
+            borderRadius: 5,
+            fixed: "false",
+            vertical: "middle",
+            horizontal: "left",
+            key: "5e9773d40306432e915cb9093c9f6369",
+          },
+        };
+      </script>
+      <script
+        async
+        src="https://widget.heweather.net/simple/static/js/he-simple-common.js?v=1.1"
+      ></script>
+    </div>
+<!--和风天气插件-->
+<!--搜索框和书签-->
+<div id="content">
+    <div class="con">
+
+        <!--一般搜索框上面都有的图片↓-->
+<!--        <div class="shlogo"></div>-->
+
+        <div class="sou">
+            <form class="search" action="https://www.baidu.com/s">
+                <img class="se" src="./icon/baidu.ico" title="点击切换搜索引擎">
+                <input class="wd" type="text" name="wd" placeholder="请输入搜索内容" autocomplete="off">
+                <button class="s">
+                    <i style="font-size: 20px;" class="iconfont icon-sousuo"></i>
+                </button>
+            </form>
+            <div id="keywords" style="display: none;"></div>
+            <div class="search-engine" style="display: none;">
+                <div class="search-engine-head">
+                    <strong class="search-engine-tit">选择搜索引擎：</strong>
+                </div>
+                <span class="search-engine-tip"></span>
+                <ul class="search-engine-list">
+                    <li class="se-li" data-url="https://www.baidu.com/s" data-name="wd" data-img="./icon/baidu.ico">
+                        <img src="./icon/baidu.ico">百度
+                    </li>
+                    <li class="se-li" data-url="https://www.google.com/search" data-name="q" data-img="./icon/google_1.png">
+                        <img src="./icon/google_1.png">谷歌
+                    </li>
+                    <li class="se-li" data-url="https://cn.bing.com/search" data-name="q" data-img="./icon/bing.ico">
+                        <img src="./icon/bing.ico">必应
+                    </li>
+                    <li class="se-li" data-url="https://www.dogedoge.com/results" data-name="q" data-img="./icon/doge_ico.png">
+                        <img src="./icon/doge_ico.png">多吉
+                    </li>
+                    <li class="se-li" data-url="https://mijisou.com" data-name="q" data-img="./icon/mijisou.png">
+                        <img src="./icon/mijisou.png">秘迹
+                    </li>
+                    <li class="se-li" data-url="https://seeres.com/search" data-name="q" data-img="./icon/seeres.png">
+                        <img src="./icon/seeres.png">seeres
+                    </li>
+                </ul>
+            </div>
+  
+        </div>
+
+    </div>
+    <div class="foot">
+        Made with by &nbsp;
+        <a href="https://blog.yhz610.com/" target="_blank"
+          ><b>阿猫阿狗</b></a
+        >		
+    </div>
+</div>
+<!--搜索框和书签 end-->
+
+<!--
+作者:D.Young
+主页：https://yyv.me/
+github：https://github.com/5iux/sou
+日期：2019-07-26
+版权所有，请勿删除
+❶❷❸❹❺❻❼❽❾❿
+由 yeetime 修改
+github：https://github.com/yeetime/sou2
+日期：2019-12-13
+-->
+</body>
+</html>
