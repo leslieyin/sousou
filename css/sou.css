@@ -241,7 +241,7 @@ a {
     float: left;
     margin: 0;
     font-size: 14px;
-    color: #999;
+    color: #FFFFFF; /*主页搜索引擎主标题文字颜色*/
 }
 
 .search-engine ul {
@@ -829,7 +829,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #FFFFFFAB;
+    background: #FFFFFFAB; /*主页搜索栏滑动条颜色*/
     border-radius: 0;
 }
 
